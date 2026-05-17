@@ -24,30 +24,6 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^/collections/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/concept/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/contact/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/mentions-legales/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/tiktok/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^/$",
-			"dest": "_render"
-		},
-		{
 			"src": "^/404/?$",
 			"dest": "_render"
 		},

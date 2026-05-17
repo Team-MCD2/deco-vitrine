@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 
+const prerender = false;
 const POST = async ({ request, redirect }) => {
   const data = await request.formData();
   const name = data.get("name");
@@ -30,7 +31,8 @@ const POST = async ({ request, redirect }) => {
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  POST
+  POST,
+  prerender
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const page = () => _page;

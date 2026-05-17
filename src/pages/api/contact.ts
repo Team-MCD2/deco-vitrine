@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
 
+export const prerender = false;
+
 export const POST: APIRoute = async ({ request, redirect }) => {
   const data = await request.formData();
   const name = data.get('name');
