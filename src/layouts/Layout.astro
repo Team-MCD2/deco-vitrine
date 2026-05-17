@@ -1,4 +1,27 @@
 ---
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogType?: string;
+  ogImage?: string;
+  canonicalPath?: string;
+}
+
+const {
+  title = "Vente de Mobilier & Aménagement Immobilier à Toulouse | DecoShop",
+  description = "DecoShop Toulouse : votre magasin de mobilier pour l'immobilier. Tables, lits, canapés et décoration au 60 rue Jacques Babinet. Home staging et aménagement. Demandez votre devis !",
+  keywords = "Magasin meubles Toulouse, Lits Toulouse, Tables Toulouse, Aménagement intérieur immobilier, Home staging Toulouse, DecoShop Toulouse, Décoration Toulouse",
+  ogTitle = "Vente de Mobilier & Aménagement Immobilier à Toulouse | DecoShop",
+  ogDescription = "Expert en ameublement et valorisation immobilière à Toulouse. Tables, lits, décoration... Visitez notre showroom au 60 rue Jacques Babinet.",
+  ogType = "website",
+  ogImage = "https://deco-vitrine.vercel.app/images/hero-showroom.png",
+  canonicalPath = "",
+} = Astro.props;
+
+const canonicalUrl = `https://deco-vitrine.vercel.app${canonicalPath}`;
 ---
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,10 +34,11 @@
     <link rel="apple-touch-icon" href="/favico.png" />
     
     <!-- SEO Meta & Geo Tags -->
-    <title>Vente de Mobilier & Aménagement Immobilier à Toulouse | DecoShop</title>
-    <meta name="description" content="DecoShop Toulouse : votre magasin de mobilier pour l'immobilier. Tables, lits, canapés et décoration au 60 rue Jacques Babinet. Home staging et aménagement. Demandez votre devis !">
-    <meta name="keywords" content="Magasin meubles Toulouse, Lits Toulouse, Tables Toulouse, Aménagement intérieur immobilier, Home staging Toulouse, DecoShop Toulouse, Décoration Toulouse">
-    <meta name="author" content="DecoShop">
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="DecoShop" />
+    <link rel="canonical" href={canonicalUrl} />
     
     <meta name="geo.region" content="FR-31">
     <meta name="geo.placename" content="Toulouse">
@@ -22,17 +46,17 @@
     <meta name="ICBM" content="43.5786, 1.4014">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.decoshop-toulouse.fr/">
-    <meta property="og:title" content="Vente de Mobilier & Aménagement Immobilier à Toulouse | DecoShop">
-    <meta property="og:description" content="Expert en ameublement et valorisation immobilière à Toulouse. Tables, lits, décoration... Visitez notre showroom au 60 rue Jacques Babinet.">
-    <meta property="og:image" content="https://www.decoshop-toulouse.fr/images/hero-showroom.png">
+    <meta property="og:type" content={ogType}>
+    <meta property="og:url" content={canonicalUrl}>
+    <meta property="og:title" content={ogTitle}>
+    <meta property="og:description" content={ogDescription}>
+    <meta property="og:image" content={ogImage}>
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Vente de Mobilier & Aménagement Immobilier à Toulouse | DecoShop">
-    <meta property="twitter:description" content="Expert en ameublement et valorisation immobilière à Toulouse. Tables, lits, décoration...">
-    <meta property="twitter:image" content="https://www.decoshop-toulouse.fr/images/hero-showroom.png">
+    <meta property="twitter:title" content={ogTitle}>
+    <meta property="twitter:description" content={ogDescription}>
+    <meta property="twitter:image" content={ogImage}>
 
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
