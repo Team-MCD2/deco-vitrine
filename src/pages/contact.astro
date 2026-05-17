@@ -55,14 +55,25 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
             
-            <div class="faq-grid" style="margin-top: 4rem;">
-                <div class="faq-item hidden-scroll delay-100">
-                    <h4><i class="fas fa-question-circle"></i> Faut-il prendre rendez-vous ?</h4>
-                    <p>Oui, nous privilégions l'accueil sur rendez-vous pour vous consacrer le temps nécessaire à votre projet d'aménagement.</p>
+            <div class="faq-accordion" style="margin-top: 4rem;">
+                <h3 class="section-title hidden-scroll" style="font-size: 2rem;">Questions Fréquentes</h3>
+                <div class="faq-accordion-item hidden-scroll delay-100">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-question-circle"></i> Faut-il prendre rendez-vous ?</span>
+                        <i class="fas fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, nous privilégions l'accueil sur rendez-vous pour vous consacrer le temps nécessaire à votre projet d'aménagement. Contactez-nous par téléphone ou via le formulaire de contact.</p>
+                    </div>
                 </div>
-                <div class="faq-item hidden-scroll delay-200">
-                    <h4><i class="fas fa-truck"></i> Faites-vous la livraison ?</h4>
-                    <p>Absolument. Nous proposons un service de livraison et de montage directement dans vos biens immobiliers sur Toulouse et environs.</p>
+                <div class="faq-accordion-item hidden-scroll delay-200">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><i class="fas fa-truck"></i> Faites-vous la livraison ?</span>
+                        <i class="fas fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolument. Nous proposons un service de livraison et de montage directement dans vos biens immobiliers sur Toulouse et environs. Un devis vous sera communiqué selon la distance.</p>
+                    </div>
                 </div>
             </div>
         </div>
