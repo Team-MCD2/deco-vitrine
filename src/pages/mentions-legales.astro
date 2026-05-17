@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+    <style>
+        .legal-content {
+            background: var(--bg-solid);
+            padding: 4rem;
+            border-radius: 16px;
+            margin: 4rem auto;
+            max-width: 1000px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .legal-content h1 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--secondary-color); }
+        .legal-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-dark); }
+        .legal-content p { margin-bottom: 1rem; color: var(--text-light); }
+    </style>
+
+    <main class="container">
+        <div class="legal-content">
+            <h1>Mentions Légales</h1>
+            
+            <h2>1. Éditeur du site</h2>
+            <p>Le présent site est édité par la société <strong>DecoShop Toulouse</strong>.<br>
+            Siège social : 60 rue Jacques Babinet, 31100 Toulouse<br>
+            Numéro de téléphone : 07 67 27 86 25<br>
+            Email : contact@decoshop-toulouse.fr</p>
+            
+            <h2>2. Hébergement</h2>
+            <p>Le site est hébergé par Vercel Inc.<br>
+            Adresse : 340 S Lemon Ave #4133 Walnut, CA 91789, USA</p>
+
+            <h2>3. Conception & Développement</h2>
+            <p>Le design, la conception technique et le développement de ce site ont été réalisés par <strong>Microdidact</strong>.<br>
+            Site web : <a href="https://microdidact.com/" target="_blank" style="color: var(--secondary-color); text-decoration: underline;">https://microdidact.com/</a></p>
+
+            <h2 id="confidentialite">4. Politique de Confidentialité</h2>
+            <p>Les informations recueillies via les formulaires de contact sont destinées exclusivement à DecoShop Toulouse pour le traitement de votre demande de devis ou d'information. Elles ne sont en aucun cas cédées à des tiers. Conformément à la loi "Informatique et Libertés" et au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en nous contactant par email.</p>
+
+            <h2 id="cookies">5. Cookies</h2>
+            <p>Ce site utilise des cookies techniques strictement nécessaires à son fonctionnement. Nous n'utilisons pas de cookies de traçage publicitaire intrusifs. En poursuivant votre navigation, vous acceptez l'utilisation de ces cookies fonctionnels.</p>
+        </div>
+    </main>
+</Layout>

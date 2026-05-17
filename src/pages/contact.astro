@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="padding-top: 4rem;">
+        <div class="container">
+            <h2 class="section-title hidden-scroll">Venez Nous Rencontrer</h2>
+            <div class="contact-wrapper hidden-scroll delay-200">
+                
+                <!-- Google Maps Embed -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.1340156942173!2d1.3986872766864198!3d43.58284565696615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebba829cd1a81%3A0xe5a3630fbc892697!2s60%20Rue%20Jacques%20Babinet%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 style="color: var(--secondary-color); font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-bottom: 1.5rem;">DecoShop Toulouse</h3>
+                    
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Adresse</strong><br>
+                            60 rue Jacques Babinet, 31100 Toulouse
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Téléphone</strong><br>
+                            <a href="tel:+33767278625" style="color: inherit; text-decoration: underline;">07 67 27 86 25</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Horaires</strong><br>
+                            Lundi au Dimanche : 09h30 - 19h30
+                        </div>
+                    </div>
+                    
+                    <!-- Le Formulaire de Contact ! -->
+                    <form class="contact-form" style="margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;" action="/api/contact" method="POST">
+                        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; margin-bottom: 1rem; color: #FFF;">Envoyez-nous un message</h4>
+                        <input type="text" name="name" placeholder="Votre Nom / Société" required>
+                        <input type="email" name="email" placeholder="Votre Email" required>
+                        <input type="text" name="subject" placeholder="Sujet (Devis, Renseignement...)" required>
+                        <textarea name="message" placeholder="Votre Message" rows="3" required></textarea>
+                        <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer; text-align: center;">Envoyer ma demande</button>
+                    </form>
+
+                </div>
+            </div>
+            
+            <div class="faq-grid" style="margin-top: 4rem;">
+                <div class="faq-item hidden-scroll delay-100">
+                    <h4><i class="fas fa-question-circle"></i> Faut-il prendre rendez-vous ?</h4>
+                    <p>Oui, nous privilégions l'accueil sur rendez-vous pour vous consacrer le temps nécessaire à votre projet d'aménagement.</p>
+                </div>
+                <div class="faq-item hidden-scroll delay-200">
+                    <h4><i class="fas fa-truck"></i> Faites-vous la livraison ?</h4>
+                    <p>Absolument. Nous proposons un service de livraison et de montage directement dans vos biens immobiliers sur Toulouse et environs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>
