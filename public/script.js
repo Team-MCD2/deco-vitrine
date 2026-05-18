@@ -88,4 +88,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // Sound toggle buttons for TikTok videos
+    const soundToggles = document.querySelectorAll('.sound-toggle');
+    soundToggles.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.currentTarget.closest('.tiktok-card');
+            const video = card.querySelector('video');
+            const icon = btn.querySelector('i');
+            
+            if (video.muted) {
+                video.muted = false;
+                icon.classList.remove('fa-volume-mute');
+                icon.classList.add('fa-volume-up');
+            } else {
+                video.muted = true;
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-mute');
+            }
+        });
+    });
 });
