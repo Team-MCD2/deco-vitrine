@@ -232,6 +232,116 @@ header {
     background-color: var(--bg-solid);
 }
 
+.bg-white-section {
+    background-color: #FFFFFF;
+    color: #1E293B;
+}
+
+.bg-white-section .section-title {
+    color: var(--primary-color);
+}
+
+.bg-white-section .subtitle {
+    color: var(--primary-color);
+}
+
+.bg-white-section .about-text p {
+    color: #475569;
+}
+
+.bg-white-section .stat-box {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+}
+
+.bg-white-section .stat-box:hover {
+    background: #FFFFFF;
+    border-color: var(--primary-color);
+}
+
+.bg-white-section .stat-label {
+    color: #475569;
+}
+
+.bg-white-section .service-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.bg-white-section .service-card:hover {
+    background: #FFFFFF;
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white-section .service-card h3 {
+    color: #1E293B;
+}
+
+.bg-white-section .service-card p {
+    color: #475569;
+}
+
+.bg-white-section .faq-accordion-item {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+}
+
+.bg-white-section .faq-accordion-item:hover {
+    border-color: var(--primary-color);
+}
+
+.bg-white-section .faq-accordion-item.active {
+    background: #FFFFFF;
+    border-color: var(--primary-color);
+}
+
+.bg-white-section .faq-question {
+    color: #1E293B;
+}
+
+.bg-white-section .faq-answer p {
+    color: #475569;
+}
+
+.bg-white-section .review-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+}
+
+.bg-white-section .review-card:hover {
+    background: #FFFFFF;
+    border-color: var(--primary-color);
+}
+
+.bg-white-section .review-author strong {
+    color: #1E293B;
+}
+
+.bg-white-section .review-author span {
+    color: #64748B;
+}
+
+.bg-white-section .review-text {
+    color: #475569;
+}
+
+.bg-white-section .reviews-score .score-count {
+    color: #475569;
+}
+
+.bg-white-section .google-badge {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    color: #1E293B;
+}
+
+.bg-white-section .google-badge:hover {
+    background: #FFFFFF;
+    border-color: var(--primary-color);
+}
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
