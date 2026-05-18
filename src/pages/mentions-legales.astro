@@ -10,19 +10,20 @@ import Layout from '../layouts/Layout.astro';
 >
     <style>
         .legal-content {
+            background: var(--bg-solid);
             padding: 4rem;
             border-radius: 16px;
             margin: 4rem auto;
             max-width: 1000px;
-            border: 1px solid #E2E8F0;
+            border: 1px solid rgba(255,255,255,0.05);
         }
-        .legal-content h1 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--primary-color); }
-        .legal-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: #1E293B; }
-        .legal-content p { margin-bottom: 1rem; color: #475569; }
+        .legal-content h1 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--secondary-color); }
+        .legal-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-dark); }
+        .legal-content p { margin-bottom: 1rem; color: var(--text-light); }
     </style>
 
     <main class="container">
-        <div class="legal-content bg-white-section">
+        <div class="legal-content">
             <h1>Mentions Légales</h1>
             
             <h2>1. Éditeur du site</h2>

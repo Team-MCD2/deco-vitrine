@@ -232,116 +232,6 @@ header {
     background-color: var(--bg-solid);
 }
 
-.bg-white-section {
-    background-color: #FFFFFF;
-    color: #1E293B;
-}
-
-.bg-white-section .section-title {
-    color: var(--primary-color);
-}
-
-.bg-white-section .subtitle {
-    color: var(--primary-color);
-}
-
-.bg-white-section .about-text p {
-    color: #475569;
-}
-
-.bg-white-section .stat-box {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-}
-
-.bg-white-section .stat-box:hover {
-    background: #FFFFFF;
-    border-color: var(--primary-color);
-}
-
-.bg-white-section .stat-label {
-    color: #475569;
-}
-
-.bg-white-section .service-card {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
-}
-
-.bg-white-section .service-card:hover {
-    background: #FFFFFF;
-    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
-}
-
-.bg-white-section .service-card h3 {
-    color: #1E293B;
-}
-
-.bg-white-section .service-card p {
-    color: #475569;
-}
-
-.bg-white-section .faq-accordion-item {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-}
-
-.bg-white-section .faq-accordion-item:hover {
-    border-color: var(--primary-color);
-}
-
-.bg-white-section .faq-accordion-item.active {
-    background: #FFFFFF;
-    border-color: var(--primary-color);
-}
-
-.bg-white-section .faq-question {
-    color: #1E293B;
-}
-
-.bg-white-section .faq-answer p {
-    color: #475569;
-}
-
-.bg-white-section .review-card {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-}
-
-.bg-white-section .review-card:hover {
-    background: #FFFFFF;
-    border-color: var(--primary-color);
-}
-
-.bg-white-section .review-author strong {
-    color: #1E293B;
-}
-
-.bg-white-section .review-author span {
-    color: #64748B;
-}
-
-.bg-white-section .review-text {
-    color: #475569;
-}
-
-.bg-white-section .reviews-score .score-count {
-    color: #475569;
-}
-
-.bg-white-section .google-badge {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-    color: #1E293B;
-}
-
-.bg-white-section .google-badge:hover {
-    background: #FFFFFF;
-    border-color: var(--primary-color);
-}
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1459,4 +1349,222 @@ footer {
     .tiktok-card { flex: 0 0 180px; }
     .contact-info { padding: 1.5rem 1rem; }
     .faq-question { font-size: 0.85rem; padding: 0.75rem; }
+}
+
+/* ==========================================================================
+   Expert UX/UI Section Light System (Alternate High-End Theme)
+   ========================================================================== */
+.section-light {
+    background-color: #F8FAFC !important; /* Clean, warm off-white (slate-50) */
+    color: #334155 !important; /* Slate-700 for highly readable body text */
+    position: relative;
+}
+
+/* Subtle background accent gradient for light sections to add luxury depth */
+.section-light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.02), transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(250, 204, 21, 0.02), transparent 40%) !important;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.section-light .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Headings in Light Sections */
+.section-light h1,
+.section-light h2,
+.section-light h3,
+.section-light h4,
+.section-light h5,
+.section-light h6,
+.section-light .section-title {
+    color: #0F172A !important; /* Deep Slate-900 for high-contrast typography */
+}
+
+/* Gold subtitle styled for white backgrounds to avoid low contrast */
+.section-light .subtitle {
+    color: #B45309 !important; /* Deep Warm Amber/Gold instead of bright yellow */
+}
+
+/* Section Title Underline */
+.section-light .section-title::after {
+    background-color: #D97706 !important; /* Solid Amber/Gold */
+}
+
+/* Body Text overrides */
+.section-light p,
+.section-light .about-text p {
+    color: #475569 !important; /* Slate-600 */
+}
+
+/* Check list items */
+.section-light .check-list li {
+    color: #334155 !important;
+}
+
+.section-light .check-list i {
+    color: #D97706 !important; /* Deep Amber check icons */
+}
+
+/* Premium Floating Stat Boxes in Light Sections */
+.section-light .stat-box {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03) !important;
+    color: #334155 !important;
+}
+
+.section-light .stat-box:hover {
+    transform: translateY(-5px) !important;
+    border-color: #D97706 !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+.section-light .stat-number {
+    color: #1E3A8A !important; /* Navy blue for numbers - looks extremely premium and solid! */
+}
+
+.section-light .stat-label {
+    color: #64748B !important; /* Slate-500 */
+}
+
+/* Floating Premium Service Cards in Light Sections */
+.section-light .service-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03) !important;
+    color: #334155 !important;
+}
+
+.section-light .service-card::before {
+    background: #D97706 !important; /* Amber border-top line on hover */
+}
+
+.section-light .service-card:hover {
+    transform: translateY(-10px) !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 25px 50px -10px rgba(15, 23, 42, 0.08) !important;
+    border-color: rgba(217, 119, 6, 0.2) !important;
+}
+
+.section-light .service-icon {
+    color: #D97706 !important; /* Amber instead of yellow icon */
+}
+
+.section-light .service-card h3 {
+    color: #0F172A !important;
+}
+
+.section-light .service-card p {
+    color: #475569 !important;
+}
+
+/* FAQ Accordion in Light Sections */
+.section-light .faq-accordion-item {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.01) !important;
+}
+
+.section-light .faq-accordion-item:hover {
+    border-color: rgba(217, 119, 6, 0.3) !important;
+}
+
+.section-light .faq-accordion-item.active {
+    background: #FFFFFF !important;
+    border-color: #1E3A8A !important; /* Primary brand Navy border */
+    box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.05) !important;
+}
+
+.section-light .faq-question {
+    color: #0F172A !important;
+}
+
+.section-light .faq-question span i {
+    color: #D97706 !important; /* Amber question icon */
+}
+
+.section-light .faq-chevron {
+    color: #94A3B8 !important;
+}
+
+.section-light .faq-accordion-item.active .faq-chevron {
+    color: #1E3A8A !important;
+}
+
+.section-light .faq-answer p {
+    color: #475569 !important;
+}
+
+/* Google Reviews Section in Light Sections */
+.section-light .reviews-summary {
+    color: #0F172A !important;
+}
+
+.section-light .reviews-score .score-number {
+    color: #1E3A8A !important; /* Brand Navy score number */
+}
+
+.section-light .reviews-score .score-count {
+    color: #64748B !important;
+}
+
+.section-light .google-badge {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    color: #334155 !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02) !important;
+}
+
+.section-light .google-badge:hover {
+    border-color: #D97706 !important;
+    background: rgba(217, 119, 6, 0.04) !important;
+    color: #D97706 !important;
+}
+
+.section-light .review-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03) !important;
+}
+
+.section-light .review-card:hover {
+    border-color: rgba(217, 119, 6, 0.3) !important;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.06) !important;
+}
+
+.section-light .review-card::before {
+    color: rgba(217, 119, 6, 0.06) !important;
+}
+
+.section-light .review-author strong {
+    color: #0F172A !important;
+}
+
+.section-light .review-author span {
+    color: #64748B !important;
+}
+
+.section-light .review-stars {
+    color: #D97706 !important; /* Star rating gold color */
+}
+
+.section-light .review-text {
+    color: #475569 !important;
+}
+
+/* Contact Wrapper and Map inside Light Section */
+.section-light .contact-wrapper {
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.1) !important;
+    border: 1px solid rgba(15, 23, 42, 0.05) !important;
 }
